@@ -13,16 +13,19 @@
     <div class="w3-row-padding w3-auto">
         <div class="w3-third">
             <h2> <a title="Link to my first webpage." href="old_index.html"> First Webpage. </a> </h2>
-            <p> Here I just tried some basic things. </p>
+            <p id="field_1"> Here I just tried some basic things. </p>
+            <button type="button" onclick='document.getElementById("field_1").innerHTML = "Woops"'>Replace content</button>
         </div>
-        <div class="w3-third">
+        <div id="field_2" class="w3-third">
             <h2> Second Webpage. </h2>
             <p> Actually, you're looking at it. </p>
+            <button type="button" onclick='document.getElementById("field_2").style.display = "none"'>Remove content</button>
         </div>
-        <div class="w3-third">
+        <div id="field_3" class="w3-third" style="display: none;">
             <h2> Third Webpage. </h2>
             <p> Working on it. </p>
         </div>
+        <button type="button" onclick='document.getElementById("field_3").style.display = "block"'>Show content</button>
     </div>
 </body>
 </html>
