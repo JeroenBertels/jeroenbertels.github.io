@@ -8,7 +8,7 @@ Simple static website for BRTLS Logic, intended for GitHub Pages.
 - `services.html` - consultancy services
 - `projects.html` - selected project experience
 - `contact.html` - static contact form using `mailto:info@brtls.be`
-- `assets/` - styles, JavaScript, and logo assets
+- `assets/` - styles, JavaScript, logo assets, and the cropped header mark
 - `CNAME` - GitHub Pages custom domain, set to `brtls.be`
 
 ## Local preview
