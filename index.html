@@ -9,9 +9,11 @@
     <meta property="og:description" content="AI engineering, data systems, and production software consultancy.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://brtls.be/">
-    <meta property="og:image" content="https://brtls.be/assets/brtls-logo-stack.png">
+    <meta property="og:image" content="https://brtls.be/assets/icon-512.png">
     <title>BRTLS Logic | AI Engineering &amp; Software Consultancy</title>
-    <link rel="icon" href="assets/brtls-logo-stack.png">
+    <link rel="icon" href="assets/brtls-mark.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/site.js" defer></script>
   </head>
@@ -40,9 +42,12 @@
       <section class="hero">
         <canvas class="logic-canvas" id="logic-canvas" aria-hidden="true"></canvas>
         <div class="hero__inner">
+          <div class="hero__mark" aria-hidden="true">
+            <img src="assets/brtls-logo-stack.png" alt="">
+          </div>
           <div class="hero__content">
             <p class="eyebrow">Independent AI, data, and software consultancy</p>
-            <h1>BRTLS Logic</h1>
+            <h1 class="sr-only">BRTLS Logic</h1>
             <p class="hero__lead">
               Research depth for real-world delivery: AI engineering, data systems, and production software built with care.
             </p>
@@ -50,9 +55,6 @@
               <a class="button button--primary" href="services.html">Explore services</a>
               <a class="button button--secondary" href="contact.html">Start a conversation</a>
             </div>
-          </div>
-          <div class="hero__mark" aria-hidden="true">
-            <img src="assets/brtls-logo-stack.png" alt="">
           </div>
         </div>
       </section>

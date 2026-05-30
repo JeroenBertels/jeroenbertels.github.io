@@ -114,7 +114,7 @@ select {
 .brand__mark {
   width: 42px;
   height: 42px;
-  overflow: hidden;
+  overflow: visible;
   flex: 0 0 auto;
 }
 
@@ -214,18 +214,20 @@ select {
 .hero__inner {
   position: relative;
   z-index: 2;
-  width: min(var(--max), calc(100% - 40px));
+  width: min(900px, calc(100% - 40px));
   min-height: calc(100svh - var(--header-h));
   margin: 0 auto;
   display: grid;
-  grid-template-columns: minmax(0, 1.02fr) minmax(240px, 0.72fr);
-  align-items: center;
-  gap: clamp(28px, 7vw, 82px);
-  padding: clamp(44px, 8vw, 84px) 0 clamp(58px, 9vw, 94px);
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+  gap: clamp(18px, 4vw, 30px);
+  padding: clamp(34px, 6vw, 62px) 0 clamp(58px, 9vw, 94px);
+  text-align: center;
 }
 
 .hero__content {
-  max-width: 720px;
+  max-width: 780px;
 }
 
 .eyebrow {
@@ -259,7 +261,7 @@ h1 {
 
 .hero__lead {
   max-width: 650px;
-  margin: 22px 0 0;
+  margin: 10px auto 0;
   color: #41515b;
   font-size: clamp(1.12rem, 2vw, 1.42rem);
   line-height: 1.55;
@@ -275,6 +277,7 @@ h1 {
 
 .hero__actions {
   margin-top: 32px;
+  justify-content: center;
 }
 
 .button {
@@ -321,8 +324,8 @@ h1 {
 }
 
 .hero__mark {
-  justify-self: end;
-  width: min(330px, 100%);
+  justify-self: center;
+  width: clamp(220px, 28vw, 340px);
   padding: 0;
   filter: drop-shadow(0 22px 34px rgba(6, 62, 104, 0.16));
 }
@@ -668,7 +671,11 @@ h1 {
   }
 
   .site-header {
-    padding: 12px 20px;
+    padding: 10px 20px;
+    background: var(--paper);
+    border-bottom-color: var(--line);
+    backdrop-filter: none;
+    box-shadow: 0 1px 0 rgba(215, 228, 227, 0.55);
   }
 
   .brand {
@@ -676,7 +683,7 @@ h1 {
   }
 
   .brand__mark {
-    width: 38px;
+    width: 36px;
     height: 38px;
   }
 
@@ -708,15 +715,12 @@ h1 {
   }
 
   .hero__inner {
-    grid-template-columns: 1fr;
-    gap: 16px;
     align-content: center;
   }
 
   .hero__mark {
-    width: min(230px, 62vw);
-    justify-self: start;
-    order: -1;
+    width: min(250px, 68vw);
+    justify-self: center;
     opacity: 0.95;
   }
 
