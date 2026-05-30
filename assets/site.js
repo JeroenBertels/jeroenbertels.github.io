@@ -50,7 +50,7 @@
         message,
       ].filter(Boolean).join("\n");
 
-      window.location.href = `mailto:info@brtls.be?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = `mailto:contact@brtls.be?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
 
