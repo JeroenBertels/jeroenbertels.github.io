@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Contact BRTLS Logic for AI engineering, data engineering, data science, and software consultancy.">
+    <link rel="canonical" href="https://brtls.be/contact.html">
+    <meta property="og:title" content="Contact | BRTLS Logic">
+    <meta property="og:description" content="Start a conversation with BRTLS Logic.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://brtls.be/contact.html">
+    <meta property="og:image" content="https://brtls.be/assets/brtls-logo-stack.png">
+    <title>Contact | BRTLS Logic</title>
+    <link rel="icon" href="assets/brtls-logo-stack.png">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/site.js" defer></script>
+  </head>
+  <body data-page="contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="BRTLS Logic home">
+        <span class="brand__mark"><img src="assets/brtls-mark.png" alt=""></span>
+        <span class="brand__word">BRTLS Logic</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav class="site-nav" id="site-nav" data-nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="page-hero">
+        <p class="eyebrow">Contact</p>
+        <h1>Let's discuss the system you want to build.</h1>
+        <p>
+          Share the rough shape of your challenge: AI prototype, data pipeline, product feature, medtech computer vision, or agentic workflow.
+        </p>
+      </section>
+
+      <section class="contact-layout">
+        <aside class="contact-panel">
+          <h2>Direct contact</h2>
+          <p>BRTLS Logic BV</p>
+          <a class="contact-link" href="mailto:contact@brtls.be">contact@brtls.be</a>
+          <p class="muted">Based in Belgium. Available for remote, hybrid, and focused on-site collaboration depending on the engagement.</p>
+        </aside>
+
+        <form class="contact-form" action="mailto:contact@brtls.be" method="post" enctype="text/plain" data-contact-form>
+          <div class="field-group">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field-group">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field-group">
+            <label for="company">Company</label>
+            <input id="company" name="company" autocomplete="organization">
+          </div>
+          <div class="field-group">
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose a topic</option>
+              <option>AI engineering</option>
+              <option>Data engineering</option>
+              <option>Data science</option>
+              <option>Software development</option>
+              <option>Medtech computer vision</option>
+              <option>Agentic AI</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="field-group field-group--wide">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="7" required></textarea>
+          </div>
+          <button class="button button--primary" type="submit">Send message</button>
+          <p class="form-note" data-form-note>This temporary static form opens your email client and addresses the message to contact@brtls.be.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>BRTLS Logic</strong>
+        <p>AI engineering, data systems, and software consultancy.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+      </nav>
+      <a href="mailto:contact@brtls.be">contact@brtls.be</a>
+    </footer>
+  </body>
+</html>
